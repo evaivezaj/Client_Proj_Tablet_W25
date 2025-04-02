@@ -1,0 +1,135 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #ffffff;
+    border: solid 5px #200597;
+    line-height: 2;
+}
+body{
+    font-family: 'Roboto Condensed',sans-serif;
+    background-color: #00274c;
+}
+
+nav{
+    text-align: left;
+    font-size: 30px;
+    border: solid 5px white;
+    background-color: white;
+    width: 100%;
+ }
+
+ .skip-link {
+    background: #ffcb0b;
+    font-size: 30px;
+}
+
+.skip-link a{
+    position: absolute;
+    top: -40px;
+}
+
+.skip-link a:focus {
+    top: 20px;
+}
+
+nav a:hover, nav a:focus , .skip-link a:hover, .skip-link a:focus {
+    font-weight: bold;
+}
+.active{
+    font-weight: bold;
+}
+
+nav a{
+    text-decoration: none;
+    color: #200597;
+    line-height: .5;
+}
+
+nav a:hover, nav a:focus {
+    color: #000000;
+}
+nav{
+    color: darkblue;
+    text-align: left;
+    font-size: 30px;
+}
+h1{
+    color: #200597;
+    font-weight: bold;
+    font-size: 40px;
+    grid-column: 1 / 5;
+    justify-self: center;
+}
+h2{
+    color: #0D0D0D;
+    font-weight: bold;
+    font-size: 35px;
+    grid-column: 1 / 5;
+    justify-self: center;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 20px;
+    grid-column: 1 / 5;
+    justify-self: center;
+}
+
+p{
+    font-size: 20px;
+    grid-column: 1 / 5;
+    justify-self: center;
+}
+img{
+    width: 90%;
+}
+.logo-image header{
+    width: 60%;
+    margin-left: 20px;
+}
+
+main , header , footer , body , section, head, nav{
+    grid-column: 1 / 4;
+}
+
+.wolverine-image{
+    grid-column: 1 / 5;
+}
+
+section , footer{
+    padding: 15px 15px 15px 15px;
+    border: 5px solid #ffffff;
+    background-color: rgb(228, 228, 228)
+}
+@media screen and (min-width: 750px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: #ffffff;
+        border: solid 5px #200597;
+        line-height: 2;
+    }
+    h1{
+        font-size: 70px;
+    }
+
+    h2{
+        font-size: 60px;
+    }
+    h3{
+        font-size: 50px;
+        font-style: italic;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    img{
+        width: 80%;
+    }
+    .logo-image{
+        width: 75%;
+        margin-left: 120px;
+    }
+    nav {
+        font-size: 45px;
+    }
+}

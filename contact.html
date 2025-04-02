@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Student Success Portal</title>
+</head>
+<body>
+    <header class="header" id = "header">
+        <div class="skip-link" id="skip">
+            <a href="#main">Skip to Main Content</a>
+        </div>
+    <div class="logo-image" id="logo">
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+    </div>
+        <nav class="nav" id = "nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cew+.html">Center for the Education of Women</a></li>
+                <li><a href="foodpantry.html">Maize and Blue Cupboard</a></li>
+                <li><a href="caps.html">CAPS</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Student Success Hub</h1>
+    </header>
+
+    <main class="container" id = "main">
+        <section>
+            <h2>Contact</h2>
+            <p>If you have any questions, need assistance, or aren't sure which resource to use-please reach out to us!</p>
+            <p>Fill the form below and we will be in contact ASAP!</p>
+        </section>
+        <body>
+            <form
+                action="https://formspree.io/f/xyzeneew"
+                method="POST">
+
+                <fieldset>
+                <legend>Contact</legend>
+
+                <label for="name_id">Your Name</label>
+                <input type="text" id="name_id" name="name">
+
+                <label for="email_id">Your Email</label>
+                <input type="email" id="email_id" name="email">
+
+                <label for="phone_id">Your Phone Number</label>
+                <input type="tel" id="phone_id" name="phone">
+                <div><span>Format: 123-456-7890</span></div>
+
+                <label for="message_id">Leave A Message Regarding Your Inquiry</label>
+                <textarea id="message_id"></textarea>
+
+                <input type="submit" id="submit_id">
+                </fieldset>
+            </form>
+            <!-- Form code taken from in class activity -->
+        </body>
+    </main>
